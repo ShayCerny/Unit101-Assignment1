@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto+Mono:wght@200;400;700&display=swap");
+    </style>
+    <title>Session Four</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Welcome to my Pokimanz pet game</h1>
+    </header>
+
+    <main>
+      <div class="main-body">
+        <img
+          class="pet-image"
+          src="https://external-preview.redd.it/AhQU4XSSxXhWRnQFxlZ6YDmME9stVT8mKnadAz_A9XM.png?auto=webp&s=a360b643b9956c1196a5a809fa699a927ad93cae"
+          alt=""
+        />
+        <div class="meters">
+          <div class="happiness">
+            <div class="gauge">
+              <div class="gaugeBody">
+                <div class="gaugeCover"><p>💓<span class="points" id="happinessPoints"> </span></p></div>
+                <div class="gaugeFill" id= "happinessGauge"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hunger">
+            <div class="gauge">
+              <div class="gaugeBody">
+                <div class="gaugeCover"><p>🍖<span class="points" id="hungerPoints"></span></p></div>
+                <div class="gaugeFill" id= "hungerGauge"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="energy">
+            <div class="gauge">
+              <div class="gaugeBody">
+                <div class="gaugeCover"><p>🔋<span class="points" id="energyPoints"></span></p></div>
+                <div class="gaugeFill" id= "energyGauge"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <div class="feedButton">
+            <button onclick="feed()">🍖 Feed</button>
+          </div>
+          <div class="petButton"><button onclick="pet()">👋 Pet</button></div>
+          <div class="playButton">
+            <button onclick="play()">⚽ Play</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
